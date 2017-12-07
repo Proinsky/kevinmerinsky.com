@@ -1,0 +1,415 @@
+/* GLOBAL CSS */
+* {
+    font-family: 'open sans', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 75px;
+    padding: -10px;
+}
+
+h2 {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fedc8b;
+    background-color: #2e2e2e;
+    padding: .5% 1.5%;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: ;
+}
+
+h5 {
+    font-weight: 700; 
+    font-size: ;
+}
+
+h6 {
+    
+}
+
+p {
+    font-size: 12px;
+}
+
+.hr-sm {
+    border: 1px solid #2e2e2e;
+    margin: 1% 2%;
+}
+
+button {
+    background-color: #fff;
+    padding: 3% 10% 3%;
+}
+
+button a {
+    color: #2e2e2e;
+    font-weight: 700;
+}
+
+button i {
+    color: #fedc8b;
+    line-height: 3.5px;
+}
+
+/*TODO: Fix button hover state*/
+
+button:hover{
+    background-color: #fedc8b;
+}
+
+button a:hover{
+    color: #fff;
+}
+
+
+/* HEADER CSS */
+
+.navbar a {
+    font-weight: 600;
+}
+
+.navbar a { 
+    padding: -10px;
+}
+
+.nav-item {
+    border-bottom: 2px solid #fff;
+    transition: border-bottom 400ms ease-in-out;
+}
+
+.active {
+    border-bottom: 2px solid #2e2e2e;
+}
+
+.nav-item:hover{
+    border-bottom: 2px solid #fedc8b; 
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+hr {
+    color: #FEDC8B;
+    border: 8px solid #FEDC8B;
+}
+
+.hero {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.header-video {
+    margin-bottom: -16px;
+}
+
+.hero h1{
+    padding-left: 2.5%;
+}
+
+.hero h2{
+    margin-left: 3%;
+}
+
+.title-block {
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+
+
+
+/* HOME - RECENT CSS */
+
+.recentLeft {
+    margin: 0;
+}
+
+.recentRight {
+    margin: 0;
+    background-color: #2e2e2e; 
+}
+
+.tile {
+    height: 250px;
+    border: 1px solid white;
+    border-radius: 0;
+}
+
+.recent-blurb {
+    padding: 1.5%;
+    overflow: visible;
+}
+
+.recent-blurb h3 {
+    color: #fedc8b;
+    padding: 10% 0
+}
+
+.recent-blurb p {
+    color: #fff;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.t01 {
+    background-image: url(../img/mikeTyson.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: .25;
+    transition: opacity 500ms ease-in-out;
+}
+
+.t02 {
+    background-image: url(../img/parkingDay.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: .25;
+    transition: opacity 500ms ease-in-out;
+}
+
+.t03 {
+    background-image: url(../img/makers.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: .25;
+    transition: opacity 500ms ease-in-out;
+}
+
+.t04 {
+    background-image: url(../img/uartsDay.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: .25;
+    transition: opacity 500ms ease-in-out;
+}
+
+.t05 {
+    background-image: url(../img/chrisSantone.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: .25;
+    transition: opacity 500ms ease-in-out;
+}
+
+.t06 {
+    background-image: url(../img/printFresh.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: .25;
+    transition: opacity 500ms ease-in-out;
+}
+
+.t07 {
+    background-image: url(../img/holidayCArd.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: .25;
+    transition: opacity 500ms ease-in-out;
+}
+
+.t01:hover {
+    opacity: .95;
+}
+
+.t02:hover {
+    opacity: .95;
+}
+
+.t03:hover {
+    opacity: .95;
+}
+
+.t04:hover {
+    opacity: .95;
+}
+
+.t05:hover {
+    opacity: .95;
+}
+
+.t06:hover {
+    opacity: .95;
+}
+
+.t07:hover {
+    opacity: .95;
+}
+
+.title-hud {
+    padding: 10%;
+}
+
+.title-hud h3 {
+
+}
+
+.title-hud i {
+    color: #fedc8b;
+
+    padding: 10%;
+}
+
+
+
+/* HOME - ABOUT CSS */
+
+.about-blurb {
+    display: inline;
+    position: inherit;
+    z-index: 2;
+    padding: 2% 2% 2% 5%;
+    background-color: #fedc8b;
+    border: 1px solid white;
+}
+
+.profile-pic {
+    height: 400px;
+    background-image: url(../img/kevinBW.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: .6;
+    border: 1px solid white;
+    z-index: 0;
+}
+
+.pic-bg {
+    padding: 0;
+}
+
+
+
+/* HOME - CURRENT PROJECTS CSS */
+
+.vertical-line {
+    border-left: 8px solid #FEDC8B;
+}
+
+.current-projects {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.current-projects p{
+    text-align: justify;
+}
+
+
+
+/* WORK - DEMO REEL */
+
+.demo-reel {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.demo-blurb {
+    background-color: #2e2e2e;
+    padding: 2%;
+}
+
+.demo-blurb p {
+    color: #fff;
+}
+
+.demo-blurb h4 {
+    color: #fedc8b;
+}
+
+
+/* WORK - PROJECT LIST */
+
+.section-title {
+    display: block;
+    background-color: #fedc8b;
+    padding: 1% 1% 1% 10%;
+    
+}
+
+.project {
+    height: 300px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.project-blurb {
+    background-color: rgba(255,255,255,.9);
+    height: 100%;
+    padding: 2%;
+    margin-left: -1.5%;
+}
+
+/*FIXME: Fix button click so its not limited to the hyperlink only*/
+.project button a {
+    padding: .5%;
+}
+
+.project-tn {
+    background-size: cover;
+    background-position: center;
+}
+
+.tn01 {
+    background-image: url(../img/mikeTyson.jpg);
+}
+
+.tn02 {
+    background-image: url(../img/process.jpg);
+}
+
+.tn03 {
+    background-image: url(../img/printFresh.jpg);
+}
+
+.tn04 {
+    background-image: url(../img/pompRomp.jpg);
+    background-position: top;
+}
+
+.tn05 {
+    background-image: url();
+}
+
+.tn06 {
+    background-image: url();
+}
+
+
+
+/* FOOTER CSS */
+
+.footer {
+    height: 50px;
+    background-color: #2e2e2e;
+}
+
+.return-button {
+    height: 50px;
+    text-align: center;
+    background-color: #FEDC8B;
+    padding: 0;
+    
+}
+
+.return-button i {
+    margin: 0;
+    padding: 17% 40%;
+    color: #2e2e2e;
+}
+
+.disclaimer {
+    text-align: center;
+    padding: 1%;
+    font-weight: 700;
+}
