@@ -34,37 +34,35 @@ window.sr = ScrollReveal();
     });
 
 // SCROLL TO TOP 
-//$('.scrollReturn').each(function(){
-//  $(this).click(function(){ 
-//    $('html').animate({ scrollTop: 0 }, 'slow'); return true; 
-//    $('body').animate({ scrollTop: 0 }, 'slow'); return true; 
-//    $('document').animate({ scrollTop: 0 }, 'slow'); return true; 
-//    $('window').animate({ scrollTop: 0 }, 'slow'); return true; 
-//  });
-//});
 
-$('.scrollReturn').on("click",function() {
-    $('html, body').animate({ scrollTop: 0 }, 'slow', function () {
-        alert("reached top");
-    });
-});
+
 
 // ARRAY OPACITY
 
 
 
-//$( document ).ready(function() {
-//    console.log( "ready!" );
-//});
-//
-//
-//var tiles = Array('.t01','.t02','.t03','.t04','.t05','.t06','.t07');
-//var rand = tiles[Math.floor(Math.random()*tiles.length)];
-//console.log(rand);
-//
-//$(".tile").hover(function(){
+$( document ).ready(function() {
+
+});
+
+
+var tiles = Array('.t01','.t02','.t03','.t04','.t05','.t06','.t07');
+var rand = tiles[Math.floor(Math.random()*tiles.length)];
+console.log(rand);
+
+var inst = tiles;
+
+inst = jQuery.grep(inst, function(value) {
+  return value != removeItem;
+});
+
+
+//$(window).ready(function(){
+//    console.log(instance);
 //    $(rand).css("opacity","1");
 //});
+
+
 
 // NEW ATEMPT
 // TODO: Switch JS to slide up HUD
