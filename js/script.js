@@ -1,3 +1,4 @@
+
 // SCROLL REVEAL 
 window.sr = ScrollReveal();
     sr.reveal('.hero h1', {
@@ -19,8 +20,7 @@ window.sr = ScrollReveal();
         origin:'bottom',
     });
 
-//  REMOVED BECAUSE IT EFFECTED CSS HOVER STATE
-//    sr.reveal('.tile', { duration: 2000 }, 50);
+    // sr.reveal('.tile', { duration: 2000 }, 50);
     
     sr.reveal('.project-tn', {
         duration: 1000,
@@ -33,63 +33,34 @@ window.sr = ScrollReveal();
         distance:'200px',
     });
 
-// SCROLL TO TOP 
+// TODO: SCROLL TO TOP 
 
+// TILE EMPHISIS
+// TODO: ADD ANIMATION TO THIS EFFECT, EITHER FADE IN / OUT OR SHAKE
 
-
-// ARRAY OPACITY
-
-
-
-$( document ).ready(function() {
-
-});
-
-
-var tiles = Array('.t01','.t02','.t03','.t04','.t05','.t06','.t07');
-var rand = tiles[Math.floor(Math.random()*tiles.length)];
-console.log(rand);
-
-var inst = tiles;
-
-inst = jQuery.grep(inst, function(value) {
-  return value != removeItem;
-});
-
-
-//$(window).ready(function(){
-//    console.log(instance);
-//    $(rand).css("opacity","1");
-//});
-
-
-
-// NEW ATEMPT
-// TODO: Switch JS to slide up HUD
+//setInterval(function(){emph();}, 4000)
 //
-//var tiles = Array('.t01','.t02','.t03','.t04','.t05','.t06','.t07');
-////var rand = tiles[Math.floor(Math.random()*tiles.length)];
-//
-//for (tiles; tiles; tiles) {
-//    $( window ).ready(function() {
-//        var rand = tiles[Math.floor(Math.random()*tiles.length)]
-//        console.log(rand);
-//        console.log("ready!");
-//        $(tiles.random).css("opacity",".95");
-//    });
+//function emph (){
+//    var tiles = Array('.t01','.t02','.t03','.t04','.t05','.t06','.t07',);
+//    var rand = tiles[Math.floor(Math.random() * tiles.length)];
+//    console.log(rand);
+//    
+//    $(rand).addClass('tileEmph')
+//    .siblings().removeClass('tileEmph')
 //};
 
 
-// THIRD ATEMPT
+// TEST ARRAY SUBTRACTION
 
-//var tiles = Array('.t01','.t02','.t03','.t04','.t05','.t06','.t07',);
-//var rand = tiles[Math.floor(Math.random()*tiles.length)];
-//
-//console.log("The selected tiles is" + rand)
-//
-//$( )(function(){
-//   $(rand).css("opacity", ".95"); 
-//});
+var list = Array('01','02','03','04');
+var rand = list[Math.floor(Math.random() * list.length)];
+
+var instance = list - rand;
+
+console.log(instance);
+
+
+// TODO: ADD HOVER STATE TO TILES
 
 
 

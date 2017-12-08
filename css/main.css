@@ -219,6 +219,7 @@ hr {
     transition: opacity 500ms ease-in-out;
 }
 
+/*
 .t01:hover {
     opacity: .95;
 }
@@ -246,6 +247,13 @@ hr {
 .t07:hover {
     opacity: .95;
 }
+*/
+
+.tileEmph {
+    opacity: .95;
+}
+
+
 
 
 
