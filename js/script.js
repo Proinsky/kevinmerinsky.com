@@ -38,26 +38,26 @@ window.sr = ScrollReveal();
 // TILE EMPHISIS
 // TODO: ADD ANIMATION TO THIS EFFECT, EITHER FADE IN / OUT OR SHAKE
 
-//setInterval(function(){emph();}, 4000)
-//
-//function emph (){
-//    var tiles = Array('.t01','.t02','.t03','.t04','.t05','.t06','.t07',);
-//    var rand = tiles[Math.floor(Math.random() * tiles.length)];
-//    console.log(rand);
-//    
-//    $(rand).addClass('tileEmph')
-//    .siblings().removeClass('tileEmph')
-//};
+setInterval(function(){emph();}, 3000)
+
+function emph (){
+    var tiles = Array('.t01','.t02','.t03','.t04','.t05','.t06','.t07',);
+    var rand = tiles[Math.floor(Math.random() * tiles.length)];
+    console.log(rand);
+    
+    $('.tile').removeClass('tileEmph')
+    $(rand).addClass('tileEmph')
+};
 
 
 // TEST ARRAY SUBTRACTION
 
-var list = Array('01','02','03','04');
-var rand = list[Math.floor(Math.random() * list.length)];
-
-var instance = list - rand;
-
-console.log(instance);
+//var list = Array('01','02','03','04');
+//var rand = list[Math.floor(Math.random() * list.length)];
+//
+//var instance = list - rand;
+//
+//console.log(instance);
 
 
 // TODO: ADD HOVER STATE TO TILES
