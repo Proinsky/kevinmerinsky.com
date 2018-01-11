@@ -77,13 +77,19 @@ button a:hover{
 
 .navbar a {
     font-weight: 600;
+    padding: 0 0 5px 0;
+    margin: 0;
 }
 
 .navbar a { 
     padding: -10px;
 }
 
+
+
 .nav-item {
+    margin: 5px;
+    padding: 0;
     border-bottom: 2px solid #fff;
     transition: border-bottom 400ms ease-in-out;
 }
@@ -150,6 +156,8 @@ hr {
 .recent-blurb {
     padding: 1.5%;
     overflow: visible;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
 }
 
 .recent-blurb h3 {
@@ -162,6 +170,25 @@ hr {
     font-weight: 500;
     text-align: justify;
 }
+
+.recent-top {
+    background-color: #2e2e2e;
+    color: #fff;
+    margin: 0;
+    padding: 2%;
+}
+
+.recent-top h2 {
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+.recent-bottom {
+    background-color: #2e2e2e;
+    margin: auto;
+}
+
 
 .t01 {
     background-image: url(../img/mikeTyson.jpg);
@@ -219,6 +246,19 @@ hr {
     transition: opacity 500ms ease-in-out;
 }
 
+.more-projects {
+    border: 1px solid white;
+    background-color: #2e2e2e;
+    width: 100%;
+}
+
+.more-projects a {
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
 /*
 .t01:hover {
     opacity: .95;
@@ -253,6 +293,21 @@ hr {
     opacity: .95;
 }
 
+.description {
+    padding: 15px;
+}
+
+.description i {
+    color: #fedc8b;
+}
+
+
+.d01 {
+    display: none;
+}
+
+
+
 
 
 
@@ -260,13 +315,11 @@ hr {
 /* HOME - ABOUT CSS */
 
 .about-blurb {
-    display: inline;
-    position: inherit;
-    z-index: 2;
-    padding: 2% 2% 2% 5%;
+    padding: 2% 5% 2% 2%;
     background-color: #fedc8b;
     border: 1px solid white;
 }
+
 
 .profile-pic {
     height: 400px;
@@ -281,6 +334,32 @@ hr {
 .pic-bg {
     padding: 0;
 }
+
+.about-me h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.about-me p {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.arrow {
+    display: block;
+    font-size: 175px;
+    margin: auto 0;
+    opacity: .2;
+}
+
+.down-arrow i {
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+
 
 
 
@@ -297,6 +376,13 @@ hr {
 
 .current-projects p{
     text-align: justify;
+}
+
+.current-hr {
+    color: solid black;
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -407,3 +493,47 @@ hr {
     padding: 1%;
     font-weight: 700;
 }
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (min-width: 575.99px) {
+    h1 {
+        font-size: 45px;
+    }
+    h2 {
+        font-size:  22px;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    h1 {
+        font-size: 45px;
+    }
+    h2 {
+        font-size:  22px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size:  25px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    h1 {
+        font-size: 80px;
+    }
+    h2 {
+        font-size:  30px;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
