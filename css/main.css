@@ -189,6 +189,7 @@ hr {
     margin: auto;
 }
 
+
 .t01 {
     background-image: url(../img/mikeTyson.jpg);
     background-size: cover;
@@ -292,6 +293,21 @@ hr {
     opacity: .95;
 }
 
+.description {
+    padding: 15px;
+}
+
+.description i {
+    color: #fedc8b;
+}
+
+
+.d01 {
+    display: none;
+}
+
+
+
 
 
 
@@ -299,18 +315,11 @@ hr {
 /* HOME - ABOUT CSS */
 
 .about-blurb {
-    display: inline;
-    position: inherit;
-    z-index: 2;*/
     padding: 2% 5% 2% 2%;
     background-color: #fedc8b;
     border: 1px solid white;
 }
 
-.about-hr {
-    color: #2e2e2e;
-    border: 1px solid #2e2e2e;
-}
 
 .profile-pic {
     height: 400px;
@@ -325,6 +334,32 @@ hr {
 .pic-bg {
     padding: 0;
 }
+
+.about-me h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.about-me p {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.arrow {
+    display: block;
+    font-size: 175px;
+    margin: auto 0;
+    opacity: .2;
+}
+
+.down-arrow i {
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+
 
 
 

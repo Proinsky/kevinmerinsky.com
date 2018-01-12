@@ -40,7 +40,9 @@ window.sr = ScrollReveal();
 
 // TODO: SCROLL TO TOP 
 
+
 // TILE EMPHISIS
+
 
 // TODO: ADD ANIMATION TO THIS EFFECT, EITHER FADE IN / OUT OR SHAKE
 
@@ -54,6 +56,18 @@ function emph (){
     $('.tile').removeClass('tileEmph')
     $(rand).addClass('tileEmph')
 };
+//
+//function gif (){
+//    $('.t01').css("background-image", "url(./img/kevinBW)")
+//}
+
+
+//$(".t01").hover(function(){
+//    $(".t01").css("display", "none");
+//    }, function(){
+//    $(".d01").css("display", "inherit");
+//});
+
 
 //function emph (){
 //    const tiles = Array('.t01','.t02','.t03','.t04','.t05','.t06','.t07',);
