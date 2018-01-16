@@ -151,6 +151,7 @@ hr {
     height: 250px;
     border: 1px solid white;
     border-radius: 0;
+    transition: opacity 1000ms ease-in;
 }
 
 .recent-blurb {
@@ -195,7 +196,6 @@ hr {
     background-size: cover;
     background-position: center;
     opacity: .25;
-    transition: opacity 500ms ease-in-out;
 }
 
 .t02 {
@@ -203,7 +203,6 @@ hr {
     background-size: cover;
     background-position: center;
     opacity: .25;
-    transition: opacity 500ms ease-in-out;
 }
 
 .t03 {
@@ -211,7 +210,6 @@ hr {
     background-size: cover;
     background-position: center;
     opacity: .25;
-    transition: opacity 500ms ease-in-out;
 }
 
 .t04 {
@@ -219,7 +217,6 @@ hr {
     background-size: cover;
     background-position: center;
     opacity: .25;
-    transition: opacity 500ms ease-in-out;
 }
 
 .t05 {
@@ -227,7 +224,6 @@ hr {
     background-size: cover;
     background-position: center;
     opacity: .25;
-    transition: opacity 500ms ease-in-out;
 }
 
 .t06 {
@@ -235,7 +231,6 @@ hr {
     background-size: cover;
     background-position: center;
     opacity: .25;
-    transition: opacity 500ms ease-in-out;
 }
 
 .t07 {
@@ -243,7 +238,6 @@ hr {
     background-size: cover;
     background-position: center;
     opacity: .25;
-    transition: opacity 500ms ease-in-out;
 }
 
 .more-projects {
@@ -295,7 +289,23 @@ hr {
 
 .description {
     padding: 15px;
+    opacity: 0;
+    transition: opacity 150ms ease-in;
 }
+
+.tile:hover {
+    background-image: none;
+    opacity: 1;
+    transition: none;
+}
+
+
+.tile:hover > .description {
+    opacity: 1;
+    transition: none;
+}
+
+
 
 .description i {
     color: #fedc8b;
@@ -303,7 +313,7 @@ hr {
 
 
 .d01 {
-    display: none;
+
 }
 
 
@@ -465,7 +475,32 @@ hr {
     background-image: url();
 }
 
+/* WORK - PROJECT PAGE */
 
+
+.gear-icon {
+    padding: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+}
+
+.c300 {
+    background-image: url(../img/canon_0635c002_eos_c300_mark_ii_1134579.jpg);
+}
+
+.ronin {
+    background-image: url(../img/DJI_Ronin_M-2.jpg);
+}
+
+.lens {
+    background-image: url(../img/24310_2_l.jpg);
+}
+
+.resolve {
+    background-image: url(../img/36019.png);
+}
 
 /* FOOTER CSS */
 
