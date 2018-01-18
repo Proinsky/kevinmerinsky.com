@@ -195,17 +195,18 @@ hr {
     background-image: url(../img/mikeTyson.jpg);
     background-size: cover;
     background-position: center;
+    opacity: 0;
 }
 
 .t02 {
-    background-image: url(../img/parkingDay.jpg);
+    background-image: url();
     background-size: cover;
     background-position: center;
-    opacity: 1;
+    opacity: 0;
 }
 
 .t03 {
-    background-image: url(../img/makers.jpg);
+    background-image: url();
     background-size: cover;
     background-position: center;
     opacity: 0;
