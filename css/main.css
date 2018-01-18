@@ -151,6 +151,7 @@ hr {
     height: 250px;
     border: 1px solid white;
     border-radius: 0;
+    transition: opacity 3s ease-in-out;
 }
 
 .recent-blurb {
@@ -192,6 +193,515 @@ hr {
 
 .t01 {
     background-image: url(../img/mikeTyson.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.t02 {
+    background-image: url(../img/parkingDay.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+}
+
+.t03 {
+    background-image: url(../img/makers.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+}
+
+.t04 {
+    background-image: url(../img/uartsDay.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+}
+
+.t05 {
+    background-image: url(../img/chrisSantone.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+}
+
+.t06 {
+    background-image: url(../img/printFresh.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+}
+
+.t07 {
+    background-image: url(../img/holidayCArd.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+}
+
+.more-projects {
+    border: 1px solid white;
+    background-color: #2e2e2e;
+    width: 100%;
+}
+
+.more-projects a {
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.tileEmph {
+    opacity: .95;
+}
+
+.description {
+    padding: 15px;
+    display: none;
+    height: 0;
+}
+
+.description i {
+    color: #fedc8b;
+}
+
+.tile:hover {
+    background-image: none;
+    opacity: 1;
+}
+
+.tile:hover > .description {
+    display: block;
+}
+
+.small-hr {
+    background-color: lightgray;
+    height: 1px;
+    border: none;
+}
+
+
+
+
+/* HOME - ABOUT CSS */
+
+.about-blurb {
+    padding: 2% 5% 2% 2%;
+    background-color: #fedc8b;
+    border: 1px solid white;
+}
+
+
+.profile-pic {
+    height: 400px;
+    background-image: url(../img/kevinBW.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: .6;
+    border: 1px solid white;
+    z-index: 0;
+}
+
+.pic-bg {
+    padding: 0;
+}
+
+.about-me h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.about-me p {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.arrow {
+    display: block;
+    font-size: 175px;
+    margin: auto 0;
+    opacity: .2;
+}
+
+.down-arrow i {
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+
+
+
+
+/* HOME - CURRENT PROJECTS CSS */
+
+.vertical-line {
+    border-left: 8px solid #FEDC8B;
+}
+
+.current-projects {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.current-projects p{
+    text-align: justify;
+}
+
+.current-hr {
+    color: solid black;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* WORK - DEMO REEL */
+
+.demo-reel {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.demo-blurb {
+    background-color: #2e2e2e;
+    padding: 2%;
+}
+
+.demo-blurb p {
+    color: #fff;
+}
+
+.demo-blurb h4 {
+    color: #fedc8b;
+}
+
+
+/* WORK - PROJECT LIST */
+
+.section-title {
+    display: block;
+    background-color: #fedc8b;
+    padding: 1% 1% 1% 10%;
+    
+}
+
+.project {
+    height: 300px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.project-blurb {
+    background-color: rgba(255,255,255,.9);
+    height: 100%;
+    padding: 2%;
+    margin-left: -1.5%;
+}
+
+/*FIXME: Fix button click so its not limited to the hyperlink only*/
+.project button a {
+    padding: .5%;
+}
+
+.project-tn {
+    background-size: cover;
+    background-position: center;
+}
+
+.tn01 {
+    background-image: url(../img/mikeTyson.jpg);
+}
+
+.tn02 {
+    background-image: url(../img/process.jpg);
+}
+
+.tn03 {
+    background-image: url(../img/printFresh.jpg);
+}
+
+.tn04 {
+    background-image: url(../img/pompRomp.jpg);
+    background-position: top;
+}
+
+.tn05 {
+    background-image: url();
+}
+
+.tn06 {
+    background-image: url();
+}
+
+
+
+/* FOOTER CSS */
+
+.footer {
+    height: 50px;
+    background-color: #2e2e2e;
+}
+
+.return-button {
+    height: 50px;
+    text-align: center;
+    background-color: #FEDC8B;
+    padding: 0;
+    
+}
+
+.return-button i {
+    margin: 0;
+    padding: 17% 40%;
+    color: #2e2e2e;
+}
+
+.disclaimer {
+    text-align: center;
+    padding: 1%;
+    font-weight: 700;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (min-width: 575.99px) {
+    h1 {
+        font-size: 45px;
+    }
+    h2 {
+        font-size:  22px;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    h1 {
+        font-size: 45px;
+    }
+    h2 {
+        font-size:  22px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size:  25px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    h1 {
+        font-size: 80px;
+    }
+    h2 {
+        font-size:  30px;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+=======
+/* GLOBAL CSS */
+* {
+    font-family: 'open sans', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 75px;
+    padding: -10px;
+}
+
+h2 {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fedc8b;
+    background-color: #2e2e2e;
+    padding: .5% 1.5%;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: ;
+}
+
+h5 {
+    font-weight: 700; 
+    font-size: ;
+}
+
+h6 {
+    
+}
+
+p {
+    font-size: 12px;
+}
+
+.hr-sm {
+    border: 1px solid #2e2e2e;
+    margin: 1% 2%;
+}
+
+button {
+    background-color: #fff;
+    padding: 3% 10% 3%;
+}
+
+button a {
+    color: #2e2e2e;
+    font-weight: 700;
+}
+
+button i {
+    color: #fedc8b;
+    line-height: 3.5px;
+}
+
+/*TODO: Fix button hover state*/
+
+button:hover{
+    background-color: #fedc8b;
+}
+
+button a:hover{
+    color: #fff;
+}
+
+
+/* HEADER CSS */
+
+.navbar a {
+    font-weight: 600;
+    padding: 0 0 5px 0;
+    margin: 0;
+}
+
+.navbar a { 
+    padding: -10px;
+}
+
+
+
+.nav-item {
+    margin: 5px;
+    padding: 0;
+    border-bottom: 2px solid #fff;
+    transition: border-bottom 400ms ease-in-out;
+}
+
+.active {
+    border-bottom: 2px solid #2e2e2e;
+}
+
+.nav-item:hover{
+    border-bottom: 2px solid #fedc8b; 
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+hr {
+    color: #FEDC8B;
+    border: 8px solid #FEDC8B;
+}
+
+.hero {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.header-video {
+    margin-bottom: -16px;
+}
+
+.hero h1{
+    padding-left: 2.5%;
+}
+
+.hero h2{
+    margin-left: 3%;
+}
+
+.title-block {
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+
+
+
+/* HOME - RECENT CSS */
+
+.recentLeft {
+    margin: 0;
+}
+
+.recentRight {
+    margin: 0;
+    background-color: #2e2e2e; 
+}
+
+.tile {
+    height: 250px;
+    border: 1px solid white;
+    border-radius: 0;
+}
+
+.recent-blurb {
+    padding: 1.5%;
+    overflow: visible;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.recent-blurb h3 {
+    color: #fedc8b;
+    padding: 10% 0
+}
+
+.recent-blurb p {
+    color: #fff;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.recent-top {
+    background-color: #2e2e2e;
+    color: #fff;
+    margin: 0;
+    padding: 2%;
+}
+
+.recent-top h2 {
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+.recent-bottom {
+    background-color: #2e2e2e;
+    margin: auto;
+}
+
+
+.t01 {
+    background-image: url(../giphy-static.jpg);
     background-size: cover;
     background-position: center;
     opacity: .25;
@@ -259,9 +769,8 @@ hr {
 }
 
 
-/*
 .t01:hover {
-    opacity: .95;
+    background-image: url(../giphy.gif);
 }
 
 .t02:hover {
@@ -287,7 +796,6 @@ hr {
 .t07:hover {
     opacity: .95;
 }
-*/
 
 .tileEmph {
     opacity: .95;
@@ -474,6 +982,8 @@ hr {
     background-color: #2e2e2e;
 }
 
+.
+
 .return-button {
     height: 50px;
     text-align: center;
@@ -486,6 +996,14 @@ hr {
     margin: 0;
     padding: 17% 40%;
     color: #2e2e2e;
+}
+
+.sm-return i {
+    background-color: #fedc8b;
+    color: #2e2e2e;
+    display: block;
+    position: relative;
+    margin: auto;
 }
 
 .disclaimer {
