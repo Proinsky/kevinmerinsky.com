@@ -86,7 +86,6 @@ button a:hover{
 }
 
 
-
 .nav-item {
     margin: 5px;
     padding: 0;
@@ -195,7 +194,7 @@ hr {
     background-image: url(../img/mikeTyson.jpg);
     background-size: cover;
     background-position: center;
-    opacity: 0;
+    opacity: 1;
 }
 
 .t02 {
@@ -234,7 +233,7 @@ hr {
 }
 
 .t07 {
-    background-image: url(../img/holidayCArd.jpg);
+    background-image: url(../media/parking-day/parking-day-tile.jpg);
     background-size: cover;
     background-position: center;
     opacity: 0;
@@ -702,19 +701,21 @@ hr {
 
 
 .t01 {
-    background-image: url(../giphy-static.jpg);
+    background-image: url(../img/mikeTyson.jpg);
     background-size: cover;
     background-position: center;
-    opacity: .25;
-    transition: opacity 500ms ease-in-out;
+    opacity: 1;
+/*    transition: opacity 500ms ease-in-out;*/
 }
 
 .t02 {
-    background-image: url(../img/parkingDay.jpg);
+    background-image: url(../media/parking-day/parking-day-tile.jpg);
     background-size: cover;
     background-position: center;
+/*
     opacity: .25;
     transition: opacity 500ms ease-in-out;
+*/
 }
 
 .t03 {
@@ -757,6 +758,26 @@ hr {
     transition: opacity 500ms ease-in-out;
 }
 
+.white-layer {
+    display: block;
+    background-color: #fff;
+    height: 250px;
+    margin-left: -20px;
+    width: 120%;
+    overflow: hidden;
+    opacity: .6;
+    transition: opacity 300ms ease-in-out;
+}
+
+.t02.tileEmph {
+    background-image: url(../media/parking-day/parking-day.gif);
+}
+
+.t02.tileEmph > .white-layer {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
 .more-projects {
     border: 1px solid white;
     background-color: #2e2e2e;
@@ -769,41 +790,14 @@ hr {
     text-transform: uppercase;
 }
 
-
-.t01:hover {
-    background-image: url(../giphy.gif);
-}
-
-.t02:hover {
-    opacity: .95;
-}
-
-.t03:hover {
-    opacity: .95;
-}
-
-.t04:hover {
-    opacity: .95;
-}
-
-.t05:hover {
-    opacity: .95;
-}
-
-.t06:hover {
-    opacity: .95;
-}
-
-.t07:hover {
-    opacity: .95;
-}
-
 .tileEmph {
     opacity: .95;
 }
 
 .description {
     padding: 15px;
+    background-color: #fff;
+    opacity: 0;
 }
 
 .description i {
@@ -811,8 +805,14 @@ hr {
 }
 
 
+/*
 .d01 {
     display: none;
+}
+*/
+
+.description:hover {
+    opacity: 1;
 }
 
 
